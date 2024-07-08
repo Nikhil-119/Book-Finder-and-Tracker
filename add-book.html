@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>add-book</title>
+</head>
+<body onload="checkAuth()">
+
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="index.html">Home</a>
+            <a href="search.html">Search</a>
+            <a href="add-book.html">Add Book</a>
+            <a href="book-list.html">Book List</a>
+        </div>
+        <div class="navbar-right">
+            <span id="navbarUser">Logged in as: user</span>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Add a New Book</h1>
+        <input type="text" id="isbn" placeholder="ISBN">
+        <input type="text" id="title" placeholder="Title">
+        <input type="text" id="authors" placeholder="Authors (comma-separated)">
+        <input type="text" id="publisher" placeholder="Publisher">
+        <input type="number" id="pages" placeholder="Pages">
+        <button onclick="addBook()">Add Book</button>
+    </div>
+    <script src="bookFinder.js"></script>
+    
+</body>
+</html>
